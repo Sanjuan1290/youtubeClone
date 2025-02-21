@@ -1,0 +1,139 @@
+header{
+    position: fixed;
+    display: flex;
+    padding: 8px 25px;
+    box-shadow: inset 0px 0px 1px rgba(0, 0, 0, .2);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+}
+.header_left_section{
+    width: 160px;
+    display: flex;
+    gap: 25px;
+}
+.header_left_section img:nth-child(1){
+    width: 24px;
+}
+.header_left_section img:nth-child(1):hover{
+    cursor: pointer;
+}
+.header_left_section img:nth-child(2){
+    width: 90px;
+}
+
+
+.header_middle_section{
+    display: flex;
+    min-width: 100px;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+}
+
+.searchIcon{
+    background-color: rgb(247,247,247);
+    padding: 8px 15px;
+    margin-left: -1px;
+    border: .6px solid rgb(204, 204, 204);
+    width: 24px;
+}
+.searchIcon:hover{
+    background-color: rgb(234, 234, 234);
+}
+.voiceSearchIcon{
+    background-color: rgb(237, 237, 237);
+    border-radius: 100%;
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+}
+.header_middle_section input{
+    min-width: 0;
+    max-width: 350px;
+    flex: 1;
+    border-radius: 2px;
+    border: .6px solid rgb(204, 204, 204);
+    padding: 11.5px;
+    font-size: 14px;
+    box-shadow: inset 0px 0px 1.5px rgba(0, 0, 0, .2);
+    outline: none;
+    z-index: 1;
+}
+.header_middle_section input:focus{
+    border: .6px solid rgb(81, 138, 204);
+}
+.header_middle_section input::placeholder{
+    font-size: 16px;
+}
+
+.header_right_section{
+    display: flex;
+    width: 200px;
+    gap: 20px;
+    justify-content: right;
+    align-items: center;
+}
+.header_right_section img{
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+
+.notif{
+    display: flex;
+    position: relative;
+}
+.notif_number{
+    position: absolute;
+    display: flex;
+    right: 1px;
+    top: 5px;
+    color: white;
+    background-color: rgb(219, 12, 12);
+    border-radius: 100%;
+    height: 16px;
+    width: 16px;
+    font-size: 10px;
+    align-items: center ;
+    justify-content: center;
+}
+
+.tooltip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.tooltip p{
+    position: absolute;
+    background-color: gray;
+    padding: 5px;
+    bottom: -38px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .15s;
+    color: white;
+    font-size: 12px;
+}
+
+.tooltip:hover  p{
+    opacity: 1;
+    
+}
+.tooltip img{
+    cursor: pointer;
+}
+
+.header_right_section .profile-icon{
+    height: 30px;
+    width: 30px;
+}
