@@ -17,6 +17,9 @@ a{
     object-fit: cover;
 }
 
+.video_preview_container{
+    position: relative;
+}
 .video_preview_container img{
     width: 100%;
 }
@@ -89,6 +92,18 @@ a{
 
 .img-container:hover .previewProfileIcon{
     opacity: 1;
+}
+.video_duration{
+    background-color: black;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 2px 5px;
+    opacity: .9;
+    letter-spacing: .4px;
 }
 
 @media (max-width: 2000px){
