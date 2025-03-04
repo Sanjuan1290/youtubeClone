@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part 2</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .label{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        .userInput{
+            display: block;
+            padding: 8px;
+            width: 300px;
+            margin-bottom: 5px;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+            background-color: rgba(212, 212, 212, 0.5);
+        }
+        
+        .btn{
+            padding: 8px;
+            font-family: sans-serif;
+            font-size: 12px;
+            border: none;
+            background-color: rgba(212, 212, 212, 0.5);
+            margin-right: 5px;
+        }
+
+        #reqBtn{
+            background-color: black;
+            color: rgb(232, 231, 231);
+        }
+    </style>
+</head>
+<body>
+    <input class="userName" type="text" placeholder="First name">
+    <input class="userName" type="text" placeholder="Last name">
+
+    <input class="email" type="text" placeholder="Email">
+
+    <button class="signUpBtn">Sign Up</button><br><br>
+
+
+    <p class="label">Request a ride now</p>
+    <input class="userInput" type="text" placeholder="Enter pickup location">
+    <input class="userInput" type="text" placeholder="Enter destination">
+
+    <button class="btn" id="reqBtn">Request now</button>
+    <button class="btn" id="schedBtn">Schedule for later</button>
+
+</body>
+</html>

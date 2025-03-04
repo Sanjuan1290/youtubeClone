@@ -1,0 +1,95 @@
+
+.tweetContainer{
+    border: 1px solid rgba(77, 77, 77, 0.4);
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.4);
+    height: 70px;
+    width: 400px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+#profileImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    object-fit: cover;
+    margin: 0px 15px;
+}
+
+#userTweet{
+    border: none;
+    outline: none;
+    margin-right: 70px;
+}
+#tweetBtn{
+    background-color: rgb(74,152,232);
+    color: rgb(237, 237, 237);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-weight: bold;
+    transition: background-color .15s;
+}
+#tweetBtn:hover{
+    cursor: pointer;
+    background-color: rgb(68, 137, 206);
+}
+#tweetBtn:active{
+    background-color: rgb(73, 147, 222);
+}
+
+
+
+
+.mainContainer{
+    width: 1000px;
+    background-color: antiquewhite;
+    margin: 10px auto;
+    display: flex;
+    overflow-x: scroll;
+}
+.profileContainer{
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 180px;
+    height: 285px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    margin: 10px 0px 0px 10px;
+
+}
+
+.profilePicture{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.name, .mutualFriends, .addFriendBtn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 3px 0px 0px 6px;
+}
+.name{
+    font-weight: bold;
+    font-size: 16px;
+}
+.mutualFriends{
+    opacity: .6;
+    font-size: 13px;
+}
+.addFriendBtn{
+    margin-top: 20px;
+    background-color: rgb(47,93,183);
+    border: none;
+    border-radius: 4px;
+    color: rgb(237, 237, 237);
+    padding: 8px 15px;
+    transition: opacity .15s;
+}
+.addFriendBtn:hover{
+    cursor: pointer;
+    opacity: .9;
+}
+.addFriendBtn:active{
+    opacity: .8;
+}

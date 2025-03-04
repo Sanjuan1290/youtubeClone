@@ -1,0 +1,42 @@
+
+
+#subBtn{
+    padding: 10px;
+    background-color: rgb(232, 15, 15);
+    color: white;
+    font-weight: bold;
+    border: .3px solid black;
+}
+
+#joinBtn{
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(41, 92, 219);
+    border-color: rgb(41, 92, 219);
+}
+
+#tweetBtn{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(41, 92, 219);
+    font-weight: bold;
+}
+
+.btn:hover{
+    cursor: pointer;
+    opacity: 90%;
+}
+
+.btn:active{
+    cursor: default;
+    opacity: 80%;
+}
+
+#btn_Container{
+    display: flex;
+    gap: 10px;
+}

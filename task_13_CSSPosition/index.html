@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Position</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 3000px;
+        }
+
+        .bot-right{
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .sideBar{
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            width: 100px;
+            background-color: green;
+            color: white;
+        }
+        .overlay{
+            position: fixed;
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, .8);
+        }
+        .modal{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .modal button{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p class="bot-right">bottom-right</p>
+
+    <div class="sideBar">
+        <p>right sidebar</p>
+    </div>
+
+    <div class="overlay">
+        <div class="modal">
+            <h2>Modal Title</h3>
+            <p>This is a modal</p>
+            <button>Close</button>
+        </div>
+    </div>
+</body>
+</html>

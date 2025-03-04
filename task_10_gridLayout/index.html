@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container, .image-container{
+            display: inline-block;
+        }
+
+        .container{
+            width: 200px;
+            height: 350px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-container{
+            padding: 10px 0px 0px 10px;
+            height: 150px;
+        }
+
+        .image-container img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .info-container h3{
+            margin: 0px 0px 5px 0px;
+        }
+        .info-container img{
+            object-fit: cover;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+        }
+        .info-container p{
+            display: inline-block;
+            margin: 0;
+            padding-left: 5px;
+            height: 40px;
+            vertical-align: middle;
+
+             opacity: 60%;
+        }
+        .info-container button{
+            background-color: rgb(48, 104, 187);
+            border: none;
+            border-radius: 3px;
+            color: white;
+            padding: 10px 20px;
+            font-size: 15px;
+        }
+
+        .mainContainer{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 20px;
+            row-gap: 20px;
+            justify-content: center;
+
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="firstPractice">
+        <div style="background-color: aquamarine;">200px</div>
+        <div style="background-color: brown;">75px</div>
+    </div><br>
+    <div class="secondPractice">
+        <div style="background-color: aquamarine;">col1</div>
+        <div style="background-color: brown;">col2</div>
+        <div style="background-color: aquamarine;">col3</div>
+    </div><br>
+    <div class="thirdPractice">
+        <div style="background-color: aquamarine;">col1</div>
+        <div style="background-color: brown;">col2</div>
+        <div style="background-color: aquamarine;">col3</div>
+        <div style="background-color: brown;">col4</div>
+
+        <div style="background-color: aquamarine;">col1</div>
+        <div style="background-color: brown;">col2</div>
+        <div style="background-color: aquamarine;">col3</div>
+        <div style="background-color: brown;">col4</div>
+    </div><br><br><br>
+
+    <div class="mainContainer">
+
+        <div class="container">
+            <div class="image-container">
+                <img src="/Html_Css_Basics/ImageFolder/image1.png" alt="image1">
+            </div>
+    
+            <div class="info-container">
+                <h3>Oliver</h3>
+    
+                <img src="/Html_Css_Basics/ImageFolder/image3.png" alt="image3">
+                <p>2 mutual friends</p>
+    
+                <br>
+                <button>Add Friend</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+                <img src="/Html_Css_Basics/ImageFolder/image2.png" alt="image1">
+            </div>
+    
+            <div class="info-container">
+                <h3>Oliver</h3>
+    
+                <img src="/Html_Css_Basics/ImageFolder/image1.png" alt="image3">
+                <p>2 mutual friends</p>
+    
+                <br>
+                <button>Add Friend</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+                <img src="/Html_Css_Basics/ImageFolder/image3.png" alt="image1">
+            </div>
+    
+            <div class="info-container">
+                <h3>Oliver</h3>
+    
+                <img src="/Html_Css_Basics/ImageFolder/image2.png" alt="image3">
+                <p>2 mutual friends</p>
+    
+                <br>
+                <button>Add Friend</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+                <img src="/Html_Css_Basics/ImageFolder/image3.png" alt="image1">
+            </div>
+    
+            <div class="info-container">
+                <h3>Oliver</h3>
+    
+                <img src="/Html_Css_Basics/ImageFolder/image2.png" alt="image3">
+                <p>2 mutual friends</p>
+    
+                <br>
+                <button>Add Friend</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+                <img src="/Html_Css_Basics/ImageFolder/image2.png" alt="image1">
+            </div>
+    
+            <div class="info-container">
+                <h3>Oliver</h3>
+    
+                <img src="/Html_Css_Basics/ImageFolder/image1.png" alt="image3">
+                <p>2 mutual friends</p>
+    
+                <br>
+                <button>Add Friend</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+                <img src="/Html_Css_Basics/ImageFolder/image1.png" alt="image1">
+            </div>
+    
+            <div class="info-container">
+                <h3>Oliver</h3>
+    
+                <img src="/Html_Css_Basics/ImageFolder/image3.png" alt="image3">
+                <p>2 mutual friends</p>
+    
+                <br>
+                <button>Add Friend</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

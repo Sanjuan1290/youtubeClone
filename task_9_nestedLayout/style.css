@@ -1,0 +1,61 @@
+p{
+    font-family: Roboto;
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+}
+.container{
+    margin: 20px;
+    height: 400px;
+    overflow-y: auto;
+}
+.profile-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture, .profile-info,  .follow-button{
+    display: inline-block;
+}
+
+.profile-picture img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.profile-info{
+    width: 220px;
+    margin-left: 10px;
+}
+.name{
+    font-weight: bold;
+}
+
+.about, .isPopular{
+    opacity: 60%;
+}
+
+.follow-button{
+    background-color: antiquewhite;
+}
+.follow-button button{
+    background-color: rgb(76, 125, 231);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color .15s;
+}
+
+.follow-button button:hover{
+    cursor: pointer;
+    background-color:  rgb(71, 115, 212);
+}
+
+.follow-button button:active{
+    opacity: 80%;
+}

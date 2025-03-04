@@ -1,0 +1,22 @@
+
+div{
+    width: 300px;
+    text-align: center;
+}
+p {
+    font-family: Montserrat;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.label-1{
+    margin-top: 10px;
+    font-weight: 500;
+}
+.label-2{
+    text-decoration:  underline;
+}
